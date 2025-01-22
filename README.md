@@ -6,8 +6,7 @@ This repository contains the frontend of the Dashboard application, enabling use
 
 ## Technologies Used
 
-- **Frontend Framework**: React.js  
-- **Build Tool**: Vite.js  
+- **Frontend Framework**: React.js   
 - **Hosting**: Vercel  
 
 ---
