@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4a90e2;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  color: #4a90e2;
+  border-bottom: 3px solid #4a90e2;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.MonthDropdown select {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.MonthDropdown select:hover {
+  border-color: #4a90e2;
+}
+
+.SearchBox input {
+  width: calc(100% - 2rem);
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.SearchBox input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #4a90e2;
+  color: white;
+  text-transform: uppercase;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e5f3ff;
+  transition: background-color 0.3s ease;
+}
+
+td {
+  font-size: 0.9rem;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 10px;
+}
+
+.pagination button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #357ab8;
+  transform: translateY(-2px);
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.Statistics {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.Statistics-card {
+  background-color: #f4f4f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 1rem);
+  min-width: 200px;
+}
+
+.Statistics-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #4a90e2;
+}
+
+.Statistics-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.PriceDistributionChart {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.PriceDistributionChart canvas {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .Statistics {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Statistics-card {
+    width: 100%;
+  }
+
+  .PriceDistributionChart {
+    padding: 1rem;
+  }
+}
